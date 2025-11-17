@@ -1,0 +1,85 @@
+@keyframes glowSweep {
+  0% {
+    background: radial-gradient(
+      circle at 0% 50%,
+      rgba(0, 255, 120, 0.4) 0%,
+      transparent 60%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 255, 120, 0.5) 0%,
+      transparent 60%
+    );
+  }
+  100% {
+    background: radial-gradient(
+      circle at 100% 50%,
+      rgba(0, 255, 120, 0.4) 0%,
+      transparent 60%
+    );
+  }
+}
+
+
+@keyframes borderSweep {
+  0% {
+    box-shadow: inset 0 0 20px rgba(0, 255, 150, 0.3),
+      0 0 0 rgba(0, 255, 150, 0.3);
+  }
+  50% {
+    box-shadow: inset 0 0 60px rgba(0, 255, 150, 0.6),
+      0 0 40px rgba(0, 255, 150, 0.4);
+  }
+  100% {
+    box-shadow: inset 0 0 20px rgba(0, 255, 150, 0.3),
+      0 0 0 rgba(0, 255, 150, 0.3);
+  }
+}
+
+.animate-borderSweep {
+  animation: borderSweep 4s ease-in-out infinite alternate;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+
+/* Drop-shadow glow animation */
+@keyframes arcPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 150, 0.8));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(0, 255, 150, 1));
+  }
+}
+
+.animate-arcPulse {
+  animation: arcPulse 3s ease-in-out infinite;
+}
+
+
+/* PARTICLES */
+.particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(0, 255, 150, 0.9), transparent 70%);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatParticle linear forwards;
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-100px) scale(1);
+  }
+  100% {
+    transform: translateY(-250px) scale(0.7);
+    opacity: 0;
+  }
+}

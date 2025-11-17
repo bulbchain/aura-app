@@ -1,0 +1,97 @@
+/* 🌕 Main Wallet Button */
+.wallet-adapter-button,
+.wallet-adapter-button-trigger {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 9999px !important;
+  padding: 0.5rem 1.5rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  font-family: "Inter", "Poppins", "Helvetica Neue", sans-serif !important;
+  transition: all 0.25s ease !important;
+  backdrop-filter: blur(10px) !important;
+  text-transform: none !important;
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.wallet-adapter-button:hover,
+.wallet-adapter-button-trigger:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  transform: scale(1.03);
+}
+
+/* 🌙 Dropdown Container (Perfectly Centered) */
+/* .wallet-adapter-dropdown-list {
+  position: absolute !important;
+  top: calc(100% + 8px) !important;
+  left: 40% !important;
+  transform: translateX(-50%) !important;
+  background: rgba(15, 15, 15, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 6px 0 !important;
+  width: 220px !important;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.8) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  z-index: 99999 !important;
+  overflow: visible !important;
+  animation: dropdownFadeIn 0.2s ease forwards !important;
+} */
+
+/* 💫 Smooth Animation */
+/* @keyframes dropdownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+} */
+
+/* 🧩 Dropdown Items */
+/* .wallet-adapter-dropdown-list-item {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  padding: 0.55rem 1rem !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  margin: 0 8px !important;
+  text-align: center !important;
+  transition: all 0.25s ease !important;
+      width: 90%
+} */
+
+/* .wallet-adapter-dropdown-list-item:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+} */
+
+/* 🔴 Disconnect Button Styling */
+/* .wallet-adapter-dropdown-list-item:last-child {
+  background: rgba(255, 0, 72, 0.08) !important;
+  color: #ff4f6a !important;
+}
+.wallet-adapter-dropdown-list-item:last-child:hover {
+  background: rgba(255, 0, 72, 0.2) !important;
+  color: #ff7a8a !important;
+} */
+
+/* ✅ Prevent clipping or overflow */
+/* .wallet-adapter-dropdown,
+.wallet-adapter-button-wrapper,
+.wallet-adapter-dropdown-container {
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 9999 !important;
+} */
