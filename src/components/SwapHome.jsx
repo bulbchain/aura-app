@@ -7,6 +7,7 @@ import PriceChart from "./PriceChart";   // ✅ ADD THIS LINE
 import { useState, useEffect } from "react";
 import RecentSwapsFeed from "./RecentSwapsFeed";
 import Footer from "./Footer";
+import ExplorerEmbed from "./ExplorerEmbed";
 
 export default function SwapHome({ navigate }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,17 +41,21 @@ export default function SwapHome({ navigate }) {
         </div>
       </section>
 
+          {/* ⭐ Swaps Feed (ADDED HERE) */}
+      <section className="px-4 md:px-12 mt-16 mb-20">
+        <RecentSwapsFeed />
+      </section>
+
       {/* ⭐ PRICE CHART SECTION (ADDED HERE) */}
       <section className="px-4 md:px-12 mt-16 mb-20">
         <PriceChart />
       </section>
 
-       {/* ⭐ Swaps Feed (ADDED HERE) */}
       <section className="px-4 md:px-12 mt-16 mb-20">
-        <RecentSwapsFeed />
+        <ExplorerEmbed />
       </section>
 
- <section className="px-4 md:px-12 mt-16 mb-0">
+    <section className="px-4 md:px-12 mt-16 mb-0">
         <Footer />
       </section>
 
