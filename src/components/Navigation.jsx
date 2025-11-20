@@ -31,7 +31,7 @@ export default function Navigation({ homeRef }) {
   // ✅ Navigation items with scroll targets
   const navItems = [
     // { label: "Company", action: () => homeRef.current.scrollToHero() },
-    { label: "Swap", action: () => homeRef.current.scrollToSwap() },
+    { label: "Swap", action: () => navigate("/swap") },
     { label: "Growth", action: () => homeRef.current.scrollToChart() },
     { label: "Roadmap", action: () => homeRef.current.scrollToRoadmap() },
     { label: "Faq", action: () => homeRef.current.scrollToFAQ() },

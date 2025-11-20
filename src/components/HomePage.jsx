@@ -32,7 +32,7 @@ const HomePage = forwardRef((props, ref) => {
   const contactRef = useRef(null);
   const faqRef = useRef(null);
   const roadmapRef = useRef(null);
-  const swapRef = useRef(null);
+  // const swapRef = useRef(null);
 
   useEffect(() => {
     // Starfield animation
@@ -54,7 +54,7 @@ const HomePage = forwardRef((props, ref) => {
     scrollToChart: () => chartRef.current?.scrollIntoView({ behavior: "smooth" }),
     scrollToFAQ: () => faqRef.current?.scrollIntoView({ behavior: "smooth" }),
     scrollToRoadmap: () => roadmapRef.current?.scrollIntoView({ behavior: "smooth" }),
-    scrollToSwap: () => swapRef.current?.scrollIntoView({ behavior: "smooth" }),
+    // scrollToSwap: () => swapRef.current?.scrollIntoView({ behavior: "smooth" }),
 
     scrollToContact: () =>
       contactRef.current?.scrollIntoView({ behavior: "smooth" }),
@@ -102,9 +102,9 @@ const HomePage = forwardRef((props, ref) => {
           <HostedPaymentWidget/>
         </div>
                 
-        <div ref={swapRef}>
+        {/* <div ref={swapRef}>
           <SwapPage />
-        </div>
+        </div> */}
 
         <div ref={roadmapRef}>
           <Roadmap />
