@@ -2,12 +2,12 @@
 
 import SwapHeader from "./SwapHeader";
 import SwapPage from "./SwapPage";
-import PriceChart from "./PriceChart";   // ✅ ADD THIS LINE
-
-import { useState, useEffect } from "react";
+import PriceChart from "./PriceChart";
 import RecentSwapsFeed from "./RecentSwapsFeed";
 import Footer from "./Footer";
 import ExplorerEmbed from "./ExplorerEmbed";
+
+import { useState, useEffect } from "react";
 
 export default function SwapHome({ navigate }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,33 +34,38 @@ export default function SwapHome({ navigate }) {
         navigate={navigate}
       />
 
-      {/* ⭐ SWAP MAIN CONTENT */}
-      <section className="flex justify-center px-4 md:px-0 mt-10">
-        <div className="w-full max-w-xl">
-          <SwapPage />
-        </div>
-      </section>
+      {/* ⭐ WRAPPER FOR ALL SECTIONS */}
+      <div className="flex flex-col gap-20 px-4 md:px-12">
 
-          {/* ⭐ Swaps Feed (ADDED HERE) */}
-      <section className="px-4 md:px-12 mt-16 mb-20">
-        <RecentSwapsFeed />
-      </section>
+        {/* ⭐ SWAP MAIN CONTENT */}
+        <section className="flex justify-center mt-10">
+          <div className="w-full max-w-xl">
+            <SwapPage />
+          </div>
+        </section>
 
-      {/* ⭐ PRICE CHART SECTION (ADDED HERE) */}
-      <section className="px-4 md:px-12 mt-16 mb-20">
-        <PriceChart />
-      </section>
+        {/* ⭐ PRICE CHART (Comes BEFORE Swaps Feed) */}
+        <section id="price-chart">
+          <PriceChart />
+        </section>
 
-      <section className="px-4 md:px-12 mt-16 mb-20">
-        <ExplorerEmbed />
-      </section>
+        {/* ⭐ RECENT SWAPS FEED */}
+        <section id="recent-swaps">
+          <RecentSwapsFeed />
+        </section>
 
-    <section className="px-4 md:px-12 mt-16 mb-0">
-        <Footer />
-      </section>
+        {/* ⭐ BLOCKCHAIN EXPLORER */}
+       <section id="explorer" className="px-4 md:px-12 mt-16 mb-20 min-h-[600px]">
+  <ExplorerEmbed />
+</section>
 
 
+        {/* ⭐ FOOTER */}
+        <section id="footer" className="mb-10">
+          <Footer />
+        </section>
 
+      </div>
     </main>
   );
 }
