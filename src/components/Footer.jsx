@@ -1,6 +1,7 @@
 import { X, ShieldCheck, FileText, Compass } from "lucide-react";
 
 export default function Footer({ homeRef }) {
+
   const footerLinks = [
     { label: "Company", icon: Compass, action: () => homeRef?.current?.scrollToHero() },
     { label: "Swap", icon: Compass, action: () => homeRef?.current?.scrollToSwap() },
