@@ -3,9 +3,6 @@
 import { useNavigate } from "react-router-dom";
 import "./landingpage.css";
 import ParticleBackground from "./ParticleBackground";
-import NeonSphere from "./NeonSphere";
-import Sphere from "./Sphere";
-import PurpleSphere from "./PurpleSphere";
 import BlueSphere from "./BlueSphere";
 
 export default function LandingPage() {

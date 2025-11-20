@@ -78,7 +78,7 @@ export default function Footer({ homeRef }) {
                 className="w-4 h-4 object-contain"
               />
               <a
-                href="https://github.com"
+                href="https://github.com/tenixprotocoldev"
                 target="_blank"
                 rel="noreferrer"
               >
