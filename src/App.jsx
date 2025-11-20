@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LandingPage from "./components/LandingPage";
 import HomePage from "./components/HomePage";
+import DocsPage from "./components/DocsPage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,6 +26,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/home" element={<HomePage ref={homeRef} />} />
+      <Route path='/docs' element={<DocsPage />} />
     </Routes>
   );
 }

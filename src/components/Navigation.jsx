@@ -37,6 +37,7 @@ export default function Navigation({ homeRef }) {
     { label: "Faq", action: () => homeRef.current.scrollToFAQ() },
     { label: "Contact", action: () => homeRef.current.scrollToContact() },
     { label: "X402Payment", action: () => homeRef.current.scrollToContact() },
+    { label: "Docs", action: () => navigate("/docs") },
 
   ];
 
