@@ -96,8 +96,9 @@ export default function Footer({ homeRef }) {
                 alt="Buy Icon"
                 className="w-4 h-4 object-contain"
               />
+
               <a
-                href="https://pump.fun/"
+                href="https://pump.fun/coin/7EDzx3aNpi819re6hwm54BeQzg3KsrC6cwKifspNpump"
                 target="_blank"
                 rel="noreferrer"
               >
