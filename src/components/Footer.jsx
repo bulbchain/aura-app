@@ -1,6 +1,9 @@
 import { X, ShieldCheck, FileText, Compass } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer({ homeRef }) {
+
+  const navigate = useNavigate();
 
   const footerLinks = [
     { label: "Company", icon: Compass, action: () => homeRef?.current?.scrollToHero() },
@@ -65,11 +68,11 @@ export default function Footer({ homeRef }) {
             </li>
             <li className="flex items-center gap-2 hover:text-white">
               <FileText size={16} />{" "}
-              <a href="#privacy">Privacy Policy</a>
+              <a  onClick={() => navigate("/privacy")}>Privacy Policy</a>
             </li>
             <li className="flex items-center gap-2 hover:text-white">
               <ShieldCheck size={16} />{" "}
-              <a href="#terms">Terms of Use</a>
+              <a onClick={() => navigate("/terms")}>Terms of Use</a>
             </li>
 
             <li className="flex items-center gap-2 hover:text-white">
