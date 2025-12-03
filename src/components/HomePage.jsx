@@ -22,6 +22,7 @@ import { FeatureShowcase } from "./FeatureShowcase";
 import Analyze from "./Analyze";
 import Infrastructure from "./Infrastructure";
 import TokenUtility from "./TokenUtility";
+import TenixRiskMetrics from "./TenixRiskMetrics";
 
 
 // gsap.registerPlugin(ScrollTrigger);
@@ -92,11 +93,12 @@ const HomePage = forwardRef((props, ref) => {
         <Analyze/>
         <div ref={chartRef}>
           <StatsSection />
+          {/* <TenixRiskMetrics /> */}
           <RevenueChart />
-          <CategoryPieChart/>
-          <FeatureShowcase/>
-            <Infrastructure/>
-            <TokenUtility/>
+          <CategoryPieChart />
+          <FeatureShowcase />
+          <Infrastructure />
+          <TokenUtility />
           <IntegrationSection />
          <X402IntegrationSnippets />
           <HostedPaymentWidget/>

@@ -23,7 +23,7 @@ export default function TenixDocsHeader() {
   ];
 
   return (
-    <nav className="w-full bg-black/50 backdrop-blur-xl border-b border-white/10 px-6 md:px-10 py-5 flex items-center justify-between fixed top-0 left-0 z-50">
+    <nav className="w-full bg-black/100 backdrop-blur-xl border-b border-white/10 px-6 md:px-10 py-5 flex items-center justify-between fixed top-0 left-0 z-50">
       
       {/* 🔥 Logo + Back */}
       <div className="flex items-center gap-4">
@@ -46,7 +46,7 @@ export default function TenixDocsHeader() {
       </div>
 
       {/* 🔥 Desktop Nav */}
-      {!isMobile && (
+      {/* {!isMobile && (
         <div className="flex items-center gap-8">
           {navItems.map((item) => (
             <motion.button
@@ -59,10 +59,10 @@ export default function TenixDocsHeader() {
             </motion.button>
           ))}
         </div>
-      )}
+      )} */}
 
       {/* 🔥 Mobile Menu Button */}
-      {isMobile && (
+      {/* {isMobile && (
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen(!isOpen)}
@@ -70,10 +70,10 @@ export default function TenixDocsHeader() {
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </motion.button>
-      )}
+      )} */}
 
       {/* 🔥 Mobile Menu Drawer */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isMobile && isOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -95,7 +95,7 @@ export default function TenixDocsHeader() {
             ))}
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </nav>
   );
 }
