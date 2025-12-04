@@ -35,7 +35,7 @@ export default function Footer({ homeRef }) {
           </div>
 
           <p className="text-white/50">
-            Powering financial intelligence across the 402x ecosystem. Built on ERC-8004.
+            Powering financial intelligence across the 402x ecosystem. Built on Solana..
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export default function Footer({ homeRef }) {
 
       {/* Bottom Line */}
       <div className="mt-10 text-center text-xs text-white/40">
-        © {new Date().getFullYear()} Soro. All rights reserved.
+        © {new Date().getFullYear()} Tenix. All rights reserved.
       </div>
     </footer>
   );
