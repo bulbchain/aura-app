@@ -35,7 +35,7 @@ export default function Footer({ homeRef }) {
           </div>
 
           <p className="text-white/50">
-            Powering financial intelligence across the 402x ecosystem. Built on Solana..
+            Powering financial intelligence across the 402x ecosystem. Built on Solana.
           </p>
         </div>
 
