@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { useNavigate } from "react-router-dom"
 import { tradeModels } from "./TradeModels"
 import ModelCard from "./ModelCard"
+import TenixAIHeader from "./TenixAIHeader"
 
 export default function Dashboard() {
   const navigate = useNavigate()
@@ -19,41 +20,29 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
 
       {/* ====================== HEADER ====================== */}
-      <nav className="w-full bg-black/100 backdrop-blur-xl border-b border-white/10 px-6 md:px-10 py-5 flex items-center justify-between fixed top-0 left-0 z-50">
-
-        {/* Logo */}
-        <div className="flex items-center gap-4">
-          <img
-            src="/tenix-logo.png"
-            alt="Tenix"
-            onClick={() => navigate("/home")}
-            className="w-10 h-10 cursor-pointer transition-all drop-shadow-[0_0_8px_rgba(0,200,255,0.5)] hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(180,0,255,0.8)]"
-          />
-        </div>
-
-      </nav>
+     <TenixAIHeader/>
 
       {/* Add padding top because header is fixed */}
       <div className="pt-24 p-8">
 
         {/* PAGE TITLE */}
-     <motion.div
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  className="mb-12 text-center"
->
-  <h1
-    className="text-4xl font-extrabold mb-2 
-               bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 
-               text-transparent bg-clip-text"
-  >
-    Trading Dashboard
-  </h1>
+        <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-12 text-center"
+            >
+            <h1
+                className="text-4xl font-extrabold mb-2 
+                        bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 
+                        text-transparent bg-clip-text"
+            >
+                Trading Dashboard
+            </h1>
 
-  <p className="text-slate-400 max-w-2xl mx-auto">
-    Monitor and manage your AI-powered trading models in real-time
-  </p>
-</motion.div>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+                Monitor and manage your AI-powered trading models in real-time
+            </p>
+        </motion.div>
 
 
         {/* ====================== STATS OVERVIEW ====================== */}

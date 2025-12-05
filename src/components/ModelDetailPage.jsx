@@ -20,6 +20,7 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
 import { generateModelDetail } from "./TradeModels";
 import { PerformanceStats } from "./PerformanceStats";
+import TenixAIHeader from "./TenixAIHeader";
 
 export default function ModelDetailPage() {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ export default function ModelDetailPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
 
       {/* ✅ Global Header */}
-      <TenixDocsHeader />
+      <TenixAIHeader />
 
       {/* Add margin-top so page is not hidden under fixed header */}
       <div className="p-8 mt-[var(--header-height)]">

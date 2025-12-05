@@ -10,6 +10,8 @@ import Policy from "./components/Policy";
 import Terms from "./components/Terms";
 import Dashboard from "./components/Dashboard";
 import ModelDetailPage from "./components/ModelDetailPage";
+import Models from "./components/Models";
+import LiveTradesPage from "./components/LiveTradesPage";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -38,6 +40,8 @@ export default function App() {
       <Route path='/terms' element={<Terms />} />
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path="/model/:id" element={<ModelDetailPage />} />
+      <Route path="/models" element={<Models />} />
+      <Route path="/live-trades" element={<LiveTradesPage />} />
 
     </Routes>
   );
