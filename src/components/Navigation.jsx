@@ -38,6 +38,7 @@ export default function Navigation({ homeRef }) {
     { label: "Contact", action: () => homeRef.current.scrollToContact() },
     { label: "X402Payment", action: () => homeRef.current.scrollToContact() },
     { label: "Docs", action: () => navigate("/docs") },
+     { label: "Tenix AI", action: () => navigate("/dashboard") },
 
   ];
 

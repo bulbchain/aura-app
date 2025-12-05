@@ -8,6 +8,8 @@ import DocsPage from "./components/DocsPage";
 import SwapHome from "./components/SwapHome";
 import Policy from "./components/Policy";
 import Terms from "./components/Terms";
+import Dashboard from "./components/Dashboard";
+import ModelDetailPage from "./components/ModelDetailPage";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -34,6 +36,9 @@ export default function App() {
       <Route path='/swap' element={<SwapHome />} />
       <Route path='/privacy' element={<Policy />} />
       <Route path='/terms' element={<Terms />} />
+      <Route path='/dashboard' element={<Dashboard />} />
+      <Route path="/model/:id" element={<ModelDetailPage />} />
+
     </Routes>
   );
 }

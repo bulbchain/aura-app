@@ -35,3 +35,7 @@
     opacity: 0.8;
   }
 }
+
+:root {
+  --header-height: 72px; /* adjust to your header size */
+}
