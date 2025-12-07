@@ -56,9 +56,15 @@ export default function ModelDetailPage() {
 
           <div className="flex items-center gap-4">
             <div
-              className="w-12 h-12 rounded-lg opacity-30"
+              className="w-14 h-14 rounded-lg opacity-20 overflow-hidden relative"
               style={{ backgroundColor: model.color }}
-            />
+            >
+              <img
+                src={"/bot1.png"}
+                alt="icon"
+                className="w-full h-full object-cover scale-125 brightness-150 drop-shadow-lg"
+              />
+            </div>
             <div>
               <h1 className="text-4xl font-bold text-white">{model.name}</h1>
               <p className="text-slate-400 mt-1">{model.description}</p>

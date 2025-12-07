@@ -46,10 +46,17 @@ export default function ModelCard({
             <h3 className="text-lg font-bold text-white">{name}</h3>
             <p className="text-sm text-slate-400 mt-1">{description}</p>
           </div>
-          <div
-            className="w-10 h-10 rounded-lg opacity-20"
-            style={{ backgroundColor: color }}
-          />
+            <div
+                className="w-14 h-14 rounded-lg opacity-20 overflow-hidden relative"
+                style={{ backgroundColor: color  }}
+                >
+                <img
+                    src={"/bot1.png"}
+                    alt="icon"
+                    className="w-full h-full object-cover scale-125 brightness-150 drop-shadow-lg"
+                />
+            </div>
+
         </div>
 
         {/* Chart */}
