@@ -23,6 +23,7 @@ import Analyze from "./Analyze";
 import Infrastructure from "./Infrastructure";
 import TokenUtility from "./TokenUtility";
 import TenixRiskMetrics from "./TenixRiskMetrics";
+import MayaRobot from "./MayaRobot";
 
 
 // gsap.registerPlugin(ScrollTrigger);
@@ -91,8 +92,10 @@ const HomePage = forwardRef((props, ref) => {
         {/* <MarqueeSection /> */}
         <Partnership/>
         <Analyze/>
+        
         <div ref={chartRef}>
           <StatsSection />
+          <MayaRobot/>
           {/* <TenixRiskMetrics /> */}
           <RevenueChart />
           <CategoryPieChart />
