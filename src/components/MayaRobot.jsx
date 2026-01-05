@@ -106,10 +106,10 @@ export default function MayaRobot() {
              // loop
               //muted 
               alt="Maya AI"
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 0 40px rgba(255,255,255,0.25)",
-              }}
+              // whileHover={{
+              //   scale: 1.03,
+              //   boxShadow: "0 0 40px rgba(255,255,255,0.25)",
+              // }}
               transition={{ type: "spring", stiffness: 100 }}
             />
           </div>
