@@ -104,6 +104,7 @@ export default function Footer({ homeRef }) {
               >
                 Buy Now
               </a>
+
             </li>
           </ul>
         </div>
