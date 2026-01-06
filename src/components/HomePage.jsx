@@ -91,11 +91,11 @@ const HomePage = forwardRef((props, ref) => {
       
         {/* <MarqueeSection /> */}
         <Partnership/>
-        <Analyze/>
+        <MayaRobot/>
         
         <div ref={chartRef}>
           <StatsSection />
-          <MayaRobot/>
+          <Analyze/>
           {/* <TenixRiskMetrics /> */}
           <RevenueChart />
           <CategoryPieChart />
