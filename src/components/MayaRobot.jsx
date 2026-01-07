@@ -49,7 +49,7 @@ export default function MayaRobot() {
       ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-16 py-16 md:py-24">
+      <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-16 py-1 md:py-2">
 
         {/* Left Content */}
         <motion.div

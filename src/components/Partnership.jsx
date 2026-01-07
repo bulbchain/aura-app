@@ -30,7 +30,7 @@ export default function Partnership() {
   const extendedTechnology = [...technology, ...technology];
 
   return (
-    <section className="relative py-20 overflow-hidden border-t border-slate-800/50">
+    <section className="relative pt-20 pb-10 overflow-hidden border-t border-slate-800/50">
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <h2 className="text-center text-white text-2xl font-semibold mb-2">
           Trusted by 4,000+ Web3 Companies and Decentralized Technologies

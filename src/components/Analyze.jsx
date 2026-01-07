@@ -44,15 +44,7 @@ export default function Analyze() {
           initial="hidden"
           animate={controls}
         >
-          {/* Badge */}
-          <motion.div
-            className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[#bfff00]/30 bg-[#bfff00]/10"
-            variants={fadeUp(0.2)}
-          >
-            <CheckCircle2 className="w-4 h-4 text-[#bfff00]" />
-            <span className="text-sm font-medium text-[#bfff00]">Join Waitlist</span>
-          </motion.div>
-
+          
           {/* Headline */}
           <motion.h1
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight bg-gradient-to-r from-white via-lime-200 to-lime-400 bg-clip-text text-transparent"
@@ -97,10 +89,7 @@ export default function Analyze() {
               loop
               muted
               playsInline
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 0 45px rgba(191, 255, 0, 0.45)",
-              }}
+             
               transition={{ type: "spring", stiffness: 100 }}
             />
           </div>
