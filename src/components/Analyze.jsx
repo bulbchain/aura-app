@@ -1,5 +1,3 @@
-"use client";
-
 import { useRef, useEffect } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { motion, useAnimation, useInView } from "framer-motion";
