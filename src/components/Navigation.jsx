@@ -32,6 +32,7 @@ export default function Navigation({ homeRef }) {
   const navItems = [
     // { label: "Company", action: () => homeRef.current.scrollToHero() },
     { label: "Swap", action: () => navigate("/swap") },
+    { label: "Predictions", action: () => navigate("/predictions") },
     { label: "Growth", action: () => homeRef.current.scrollToChart() },
     { label: "Roadmap", action: () => homeRef.current.scrollToRoadmap() },
     { label: "Faq", action: () => homeRef.current.scrollToFAQ() },

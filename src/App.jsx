@@ -8,6 +8,7 @@ import LandingPage from "./components/LandingPage";
 import HomePage from "./components/HomePage";
 import DocsPage from "./components/DocsPage";
 import SwapHome from "./components/SwapHome";
+import PredictionMarketHome from "./components/PredictionMarketHome";
 import Policy from "./components/Policy";
 import Terms from "./components/Terms";
 import Dashboard from "./components/Dashboard";
@@ -56,6 +57,7 @@ export default function App() {
         <Route path="/home" element={<HomePage ref={homeRef} />} />
         <Route path="/docs" element={<DocsPage />} />
         <Route path="/swap" element={<SwapHome />} />
+        <Route path="/predictions" element={<PredictionMarketHome />} />
         <Route path="/privacy" element={<Policy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/dashboard" element={<Dashboard />} />

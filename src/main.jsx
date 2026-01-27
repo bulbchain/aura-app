@@ -4,6 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import { WalletConnectionProvider } from './components/wallet/WalletConnectionProvider.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import { Buffer } from 'buffer'
+
+// Make Buffer available globally
+window.Buffer = Buffer
+globalThis.Buffer = Buffer
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

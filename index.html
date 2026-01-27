@@ -5,6 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/tenix-favicon.png" sizes="1024x1024" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tenix -Unlock The Future</title>
+    <script>
+      // Polyfill Buffer before any modules load
+      if (typeof global === 'undefined') {
+        var global = globalThis;
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
