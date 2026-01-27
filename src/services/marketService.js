@@ -20,78 +20,94 @@ export async function fetchPolymarketMarkets() {
     // const response = await fetch(`${POLYMARKET_API}/markets`);
     
     // Mock data representing real prediction markets
-    const mockMarkets = [
-      {
-        id: "poly-1",
-        source: "polymarket",
-        question: "Will Bitcoin (BTC) reach $100,000 by end of 2024?",
-        outcomes: [
-          { name: "Yes", price: 0.45, probability: 45, tokenAddress: null },
-          { name: "No", price: 0.55, probability: 55, tokenAddress: null }
-        ],
-        category: "Crypto",
-        endDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
-        volume: 1250000,
-        liquidity: 450000,
-        imageUrl: null
-      },
-      {
-        id: "poly-2",
-        source: "polymarket",
-        question: "Will Ethereum (ETH) reach $5,000 by Q2 2025?",
-        outcomes: [
-          { name: "Yes", price: 0.62, probability: 62, tokenAddress: null },
-          { name: "No", price: 0.38, probability: 38, tokenAddress: null }
-        ],
-        category: "Crypto",
-        endDate: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString(),
-        volume: 890000,
-        liquidity: 320000,
-        imageUrl: null
-      },
-      {
-        id: "poly-3",
-        source: "polymarket",
-        question: "Will Solana (SOL) price exceed $200 by end of Q1 2025?",
-        outcomes: [
-          { name: "Yes", price: 0.35, probability: 35, tokenAddress: null },
-          { name: "No", price: 0.65, probability: 65, tokenAddress: null }
-        ],
-        category: "Crypto",
-        endDate: new Date(Date.now() + 60 * 24 * 60 * 60 * 1000).toISOString(),
-        volume: 2100000,
-        liquidity: 780000,
-        imageUrl: null
-      },
-      {
-        id: "poly-4",
-        source: "polymarket",
-        question: "Will total crypto market cap exceed $5 trillion by end of 2025?",
-        outcomes: [
-          { name: "Yes", price: 0.28, probability: 28, tokenAddress: null },
-          { name: "No", price: 0.72, probability: 72, tokenAddress: null }
-        ],
-        category: "Crypto",
-        endDate: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
-        volume: 3400000,
-        liquidity: 1200000,
-        imageUrl: null
-      },
-      {
-        id: "poly-5",
-        source: "polymarket",
-        question: "Will USDC maintain its $1 peg throughout 2025?",
-        outcomes: [
-          { name: "Yes", price: 0.95, probability: 95, tokenAddress: null },
-          { name: "No", price: 0.05, probability: 5, tokenAddress: null }
-        ],
-        category: "Stablecoins",
-        endDate: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
-        volume: 560000,
-        liquidity: 210000,
-        imageUrl: null
-      }
-    ];
+const mockMarkets = [
+  {
+    id: "poly-1",
+    source: "polymarket",
+    question: "Will Bitcoin (BTC) be above $100,000 by March 31, 2026?",
+    outcomes: [
+      { name: "Yes", price: 0.38, probability: 38, tokenAddress: null },
+      { name: "No", price: 0.62, probability: 62, tokenAddress: null }
+    ],
+    category: "Crypto",
+    endDate: new Date("2026-03-31T23:59:59Z").toISOString(),
+    volume: 6800000,
+    liquidity: 2200000,
+    imageUrl: null
+  },
+  {
+    id: "poly-2",
+    source: "polymarket",
+    question: "Will Bitcoin (BTC) be above $120,000 by June 30, 2026?",
+    outcomes: [
+      { name: "Yes", price: 0.29, probability: 29, tokenAddress: null },
+      { name: "No", price: 0.71, probability: 71, tokenAddress: null }
+    ],
+    category: "Crypto",
+    endDate: new Date("2026-06-30T23:59:59Z").toISOString(),
+    volume: 5400000,
+    liquidity: 1700000,
+    imageUrl: null
+  },
+  {
+    id: "poly-3",
+    source: "polymarket",
+    question: "Will Ethereum (ETH) be above $4,000 by May 31, 2026?",
+    outcomes: [
+      { name: "Yes", price: 0.47, probability: 47, tokenAddress: null },
+      { name: "No", price: 0.53, probability: 53, tokenAddress: null }
+    ],
+    category: "Crypto",
+    endDate: new Date("2026-05-31T23:59:59Z").toISOString(),
+    volume: 3200000,
+    liquidity: 1020000,
+    imageUrl: null
+  },
+  {
+    id: "poly-4",
+    source: "polymarket",
+    question: "Will Solana (SOL) exceed $200 by December 31, 2026?",
+    outcomes: [
+      { name: "Yes", price: 0.25, probability: 25, tokenAddress: null },
+      { name: "No", price: 0.75, probability: 75, tokenAddress: null }
+    ],
+    category: "Crypto",
+    endDate: new Date("2026-12-31T23:59:59Z").toISOString(),
+    volume: 2900000,
+    liquidity: 930000,
+    imageUrl: null
+  },
+  {
+    id: "poly-5",
+    source: "polymarket",
+    question: "Will the total crypto market cap exceed $3 trillion by September 30, 2026?",
+    outcomes: [
+      { name: "Yes", price: 0.53, probability: 53, tokenAddress: null },
+      { name: "No", price: 0.47, probability: 47, tokenAddress: null }
+    ],
+    category: "Crypto",
+    endDate: new Date("2026-09-30T23:59:59Z").toISOString(),
+    volume: 4100000,
+    liquidity: 1500000,
+    imageUrl: null
+  },
+  {
+    id: "poly-6",
+    source: "polymarket",
+    question: "Will USDC remain within $0.99–$1.01 throughout 2026?",
+    outcomes: [
+      { name: "Yes", price: 0.88, probability: 88, tokenAddress: null },
+      { name: "No", price: 0.12, probability: 12, tokenAddress: null }
+    ],
+    category: "Stablecoins",
+    endDate: new Date("2026-12-31T23:59:59Z").toISOString(),
+    volume: 2300000,
+    liquidity: 780000,
+    imageUrl: null
+  }
+];
+
+
 
     // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 500));
